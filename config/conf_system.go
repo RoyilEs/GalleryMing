@@ -4,7 +4,7 @@ import "fmt"
 
 type System struct {
 	Host string `yaml:"host"`
-	Post int    `yaml:"Post"`
+	Post int    `yaml:"post"`
 	Env  string `yaml:"env"`
 }
 

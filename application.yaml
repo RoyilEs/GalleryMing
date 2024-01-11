@@ -1,5 +1,5 @@
 mysql:
-  dataBase: xxx
+  dataBase: datou
   host: 127.0.0.1
   port: 3306
   userName: root
@@ -16,7 +16,7 @@ logger:
 
 system:
   host: 0.0.0.0
-  post: 8080
+  post: 8088
   env: release
 
 upload:
