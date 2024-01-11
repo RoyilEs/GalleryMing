@@ -1,0 +1,24 @@
+mysql:
+  dataBase: xxx
+  host: 127.0.0.1
+  port: 3306
+  userName: root
+  password: root
+  driverName: mysql
+  logLevel: dev
+
+logger:
+  level: info
+  prefix: '[GalleryMing]'
+  director: log
+  show-line: true
+  log-in-console: true
+
+system:
+  host: 0.0.0.0
+  post: 8080
+  env: release
+
+upload:
+  size: 5
+  path: uploads/file
