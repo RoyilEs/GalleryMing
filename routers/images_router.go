@@ -1,9 +1,9 @@
 package routers
 
-import "github.com/gin-gonic/gin"
+import "GalleryMing/api"
 
 func (router Group) ImagesRouter() {
-	router.GET("images", func(c *gin.Context) {
-		c.JSON(200, gin.H{"msg": "images"})
-	})
+	imagesApi := api.ApiGroupApp.ImagesApi
+	router.POST("images", imagesApi.ImageUploadView)
+	router.GET("image", imagesApi.ImageGetOneView)
 }

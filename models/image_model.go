@@ -12,3 +12,7 @@ type ImageModel struct {
 	Name      string          `json:"name"`
 	ImageType ctype.ImageType `gorm:"default:1" json:"image_type"` // 图片类型 本地 or 七牛云
 }
+
+func (m ImageModel) TableName() (string, interface{}) {
+	return "image_models", nil
+}
